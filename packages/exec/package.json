@@ -1,0 +1,27 @@
+{
+	"name": "@jss-cli/exec",
+	"version": "1.2.0",
+	"description": "> TODO: description",
+	"author": "姜鑫 <1599925910@qq.com>",
+	"homepage": "https://github.com/jss-less-step/cli/tree/main/packages/exec#readme",
+	"license": "ISC",
+	"type": "module",
+	"main": "lib/index.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"files": [
+		"lib"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jss-less-step/cli.git"
+	},
+	"scripts": {},
+	"bugs": {
+		"url": "https://github.com/jss-less-step/cli/issues"
+	}
+}

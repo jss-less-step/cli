@@ -1,0 +1,30 @@
+{
+	"name": "jss-cli",
+	"version": "1.2.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jss-less-step/cli.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jss-less-step/cli/issues"
+	},
+	"homepage": "https://github.com/jss-less-step/cli#readme",
+	"workspaces": [
+		"packages/models",
+		"packages/core",
+		"packages/commands/*",
+		"packages/utils/*",
+		"packages/exec"
+	],
+	"devDependencies": {
+		"lerna": "^8.1.2",
+		"rimraf": "^5.0.7"
+	}
+}

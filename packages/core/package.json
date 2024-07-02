@@ -1,0 +1,38 @@
+{
+	"name": "@jss-cli/core",
+	"version": "1.2.0",
+	"description": "> TODO: description",
+	"author": "姜鑫 <1599925910@qq.com>",
+	"homepage": "https://github.com/jss-less-step/cli/tree/main/packages/core#readme",
+	"license": "ISC",
+	"type": "module",
+	"directories": {
+		"lib": "lib"
+	},
+	"bin": {
+		"jss-cli": "dist/index.cjs"
+	},
+	"files": [
+		"lib"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jss-less-step/cli.git"
+	},
+	"scripts": {
+		"build": "node ./script/build.js"
+	},
+	"bugs": {
+		"url": "https://github.com/jss-less-step/cli/issues"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.24.7",
+		"@babel/preset-env": "^7.24.7",
+		"babel-loader": "^9.1.3",
+		"webpack": "^5.92.1",
+		"webpack-cli": "^5.1.4"
+	}
+}
