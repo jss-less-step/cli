@@ -29,7 +29,7 @@ export default {
 		],
 	},
 	resolve: {
-		extensions: [".js"], // 自动解析确定的扩展
+		extensions: [".js", ".json"], // 自动解析确定的扩展
 	},
 	plugins: [
 		new webpack.BannerPlugin({

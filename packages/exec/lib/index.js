@@ -1,7 +1,5 @@
-'use strict';
-
-module.exports = exec;
-
-function exec() {
-  return 'Hello from exec';
+export default function exec() {
+	const cliConfig = process.env.cliConfig;
+	if (cliConfig) {
+	}
 }

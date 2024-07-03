@@ -23,5 +23,8 @@
 	"scripts": {},
 	"bugs": {
 		"url": "https://github.com/jss-less-step/cli/issues"
+	},
+	"dependencies": {
+		"@jss-cli/models": "^1.2.0"
 	}
 }

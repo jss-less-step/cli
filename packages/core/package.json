@@ -9,11 +9,13 @@
 	"directories": {
 		"lib": "lib"
 	},
+	"main": "bin/index.js",
 	"bin": {
-		"jss-cli": "dist/index.cjs"
+		"jss-cli": "bin/index.js"
 	},
 	"files": [
-		"lib"
+		"lib",
+		"bin"
 	],
 	"publishConfig": {
 		"access": "public"
@@ -34,5 +36,11 @@
 		"babel-loader": "^9.1.3",
 		"webpack": "^5.92.1",
 		"webpack-cli": "^5.1.4"
+	},
+	"dependencies": {
+		"@jss-cli/utils-get-npm-info": "^1.2.0",
+		"@jss-cli/utils-log": "^1.2.0",
+		"commander": "^12.1.0",
+		"import-local": "^3.1.0"
 	}
 }
