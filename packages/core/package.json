@@ -25,6 +25,7 @@
 	},
 	"scripts": {
 		"build": "node ./script/build.js",
+		"start": "node ./script/start.js",
 		"prepublish": "npm run build"
 	},
 	"bugs": {
