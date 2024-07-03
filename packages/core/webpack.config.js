@@ -38,4 +38,7 @@ export default {
 		}),
 		new webpack.CleanPlugin(),
 	],
+	externals: {
+		"import-local": "commonjs import-local",
+	},
 };

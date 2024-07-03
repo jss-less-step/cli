@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import importLocal from "import-local";
 import logger from "@jss-cli/utils-log";
 import core from "../lib/index.js";

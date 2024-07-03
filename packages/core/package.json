@@ -7,15 +7,14 @@
 	"license": "ISC",
 	"type": "module",
 	"directories": {
-		"lib": "lib"
+		"dist": "dist"
 	},
-	"main": "bin/index.js",
+	"main": "dist/index.cjs",
 	"bin": {
-		"jss-cli": "bin/index.js"
+		"jss-cli": "dist/index.cjs"
 	},
 	"files": [
-		"lib",
-		"bin"
+		"dist"
 	],
 	"publishConfig": {
 		"access": "public"
@@ -25,7 +24,8 @@
 		"url": "git+https://github.com/jss-less-step/cli.git"
 	},
 	"scripts": {
-		"build": "node ./script/build.js"
+		"build": "node ./script/build.js",
+		"prepublish": "npm run build"
 	},
 	"bugs": {
 		"url": "https://github.com/jss-less-step/cli/issues"
