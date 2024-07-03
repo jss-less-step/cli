@@ -1,6 +1,6 @@
 {
 	"name": "@jss-cli/utils-get-npm-info",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"description": "> TODO: description",
 	"author": "姜鑫 <1599925910@qq.com>",
 	"homepage": "https://github.com/jss-less-step/cli/tree/main/packages/utils/utils-get-npm-info#readme",
