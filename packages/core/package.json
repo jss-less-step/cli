@@ -10,6 +10,7 @@
 		"dist": "dist"
 	},
 	"main": "dist/index.cjs",
+	"module": "dist/index.cjs",
 	"bin": {
 		"jss-cli": "dist/index.cjs"
 	},
