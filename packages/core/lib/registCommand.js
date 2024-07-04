@@ -1,9 +1,7 @@
 import { Command } from "commander";
-import path, { dirname } from "path";
+import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "url";
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+
 export default function registCommand(argv) {
 	const program = new Command();
 	const jsonPath = path.join(__dirname, "../package.json");
