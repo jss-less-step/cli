@@ -12,10 +12,11 @@
 	"main": "dist/index.cjs",
 	"module": "dist/index.cjs",
 	"bin": {
-		"jss-cli": "dist/index.cjs"
+		"jss-cli": "bin/index.cjs"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"bin"
 	],
 	"publishConfig": {
 		"access": "public"

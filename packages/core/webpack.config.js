@@ -7,7 +7,7 @@ const __dirname = dirname(__filename);
 
 export default {
 	mode: "development", // 或 'development'，视你的需求而定
-	entry: path.resolve(__dirname, "bin/index.js"), // 你的入口文件
+	entry: path.resolve(__dirname, "lib/index.js"), // 你的入口文件
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "index.cjs",
