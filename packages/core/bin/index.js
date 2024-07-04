@@ -6,5 +6,6 @@ if (importLocal(__filename)) {
 	logger.info("使用本地加载路径");
 } else {
 	logger.info("使用全局版本");
+	logger.info(__filename);
 	core(process.argv);
 }
