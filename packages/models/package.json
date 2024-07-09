@@ -25,5 +25,12 @@
 	"scripts": {},
 	"bugs": {
 		"url": "https://github.com/jss-less-step/cli/issues"
+	},
+	"dependencies": {
+		"@jss-cli/utils-dynamic-require": "^1.5.0",
+		"@jss-cli/utils-get-npm-info": "^1.3.0",
+		"fs-extra": "^11.2.0",
+		"npminstall": "^7.12.0",
+		"pkg-dir": "^8.0.0"
 	}
 }

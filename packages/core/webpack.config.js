@@ -29,7 +29,7 @@ export default {
 		],
 	},
 	resolve: {
-		extensions: [".js", ".json"], // 自动解析确定的扩展
+		extensions: [".js", ".json", "cjs", "mjs"], // 自动解析确定的扩展
 	},
 	plugins: [
 		new webpack.BannerPlugin({
@@ -38,7 +38,11 @@ export default {
 		}),
 		new webpack.CleanPlugin(),
 	],
-	externals: {
-		"import-local": "commonjs import-local",
-	},
+	externals: [
+		{
+			"import-local": "commonjs import-local",
+			"@jss-cli/utils-dynamic-require": "commonjs @jss-cli/utils-dynamic-require",
+			npminstall: "commonjs npminstall",
+		},
+	],
 };
