@@ -22,6 +22,11 @@ export async function getNpmVersions(npmName, registry) {
 	return Object.keys(info?.versions || []);
 }
 
+export async function getLatestNpmVerion(npmName, registry) {
+	const versions = await getNpmVersions(npmName, registry);
+	return versions[versions.length - 1];
+}
+
 export function getSemverVersions(baseVersion, versions) {
 	return versions.filter((version) => {
 		return semverPkg.satisfies(version, `^${baseVersion}`);

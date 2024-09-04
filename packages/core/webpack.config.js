@@ -45,4 +45,5 @@ export default {
 			npminstall: "commonjs npminstall",
 		},
 	],
+	devtool: "source-map",
 };

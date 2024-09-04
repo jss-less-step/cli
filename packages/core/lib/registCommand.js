@@ -10,7 +10,15 @@ export default function registCommand(argv) {
 	const packageJson = JSON.parse(packageJsonStr);
 	const version = packageJson.version;
 	program.name("jss-cli").description("前端构建脚手架").version(version).usage("<command> [options]");
-	program.command("init").description("新建项目").action(exec);
+
+	//注册init指令
+	program
+		.command("init")
+		.description("新建项目")
+		.option("-pn --projectName <项目名称>", "指定项目名称", "my-project")
+		.option("-f --force", "是否强制创建", false)
+		.action(exec);
+
 	program.option("-d --debug", "启用调试模式", false);
 	program.option("-tp,--targetPath <指令目录>", "指令目录");
 	program.option("-tv,--targetVersion <指令版本>", "指令版本");
